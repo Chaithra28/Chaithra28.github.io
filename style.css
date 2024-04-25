@@ -111,9 +111,9 @@ display: inline-block;
 
 padding: 0.3rem 0.5rem;
 
-border: #ADD8E6;
+border: #6a6d6e;
 
-color: #ADD8E6;
+color: #6f7273;
 
 border-radius: 5px;
 
@@ -127,7 +127,7 @@ border-radius: 5px;
     
     padding: 1rem;
     
-    background: #ADD8E6;
+    background: #6c6e6e;
     
     }
     
@@ -185,7 +185,7 @@ border-radius: 5px;
         
         height: 100vh;
         
-        background-image: url(Chaithrabekal.svg);
+        background-image: url(banner.svg);
           
         height: 100%;
           
@@ -234,7 +234,7 @@ border-radius: 5px;
         
         #home .home-content .text-3 span{
         
-        color: #ADD8E6;
+        color: #6d7071;
         
         font-weight: 600;
         
@@ -401,7 +401,7 @@ border-radius: 5px;
     
     .pro-languages .language i {
     
-    background: #ADD8E6;
+    background: #555656;
     
     border-radius: 50%;
     
@@ -525,7 +525,7 @@ border-radius: 5px;
 
 footer{
 
-    background: #ADD8E6;
+    background: #707374;
     
     padding: 15px 23px;
     
