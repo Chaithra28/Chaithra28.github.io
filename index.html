@@ -1,332 +1,1009 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chaithra Bekal - Machine Learning Engineer and Data Scientist. Explore my expertise in ML and data science.">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-<title>Portfolio Website | Chaithra Bekal</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <title>Chaithra Bekal - Machine Learning Engineer and Data Scientist</title>
+    <meta name="keywords" content="data scientist, machine learning engineer, data science, software engineer, Chaithra Bekal">
+    <meta name="author" content="Chaithra Bekal">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="KYe6GsSYjjdW_70JlJh1PmUMcjtCYCgVxAILWMEkWSw" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Chaithra Bekal</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-graduation-cap nav__icon"></i> Qualifications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#expertise" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Expertise
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#articles" class="nav__link">
+                            <i class="uil uil-book-open nav__icon"></i> Articles
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
 
-<!-- navbar -->
+        </nav>
+    </header>
 
-<nav id="navbar" >
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/chaithra-bekal/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <!-- <a href="" target="_blank" class="home__social-icon">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a> -->
+                        <a href="https://github.com/Chaithra28" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <!-- <a href="https://medium.com/@cerriguglielmo" target="_blank" class="home__social-icon">
+                            <i class="uil uil-medium-m"></i>
+                        </a> -->
+                    </div>
 
-    <div class="container">
-    
-    <h1 class="logo">
-    
-    <a href="#home">
-    
-    <i class="fas fa-project-diagram"></i>Portfolio</a>
-    
-    </h1>
-    
-    <ul class="menu">
-    
-    <li class="links"><a href="#home">Home</a></li>
-    
-    <li class="links"><a href="#portfolio">Portfolio</a></li>
-    
-    <li class="links"><a href="#about" >About</a></li>
-    
-    <li class="links"><a href="#contact">Contact</a></li>
-    
-    </ul>
-    
-    </div>
-    
-    </nav>
+                    <div class="home__img">
+                        <!-- <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png" />
+                            </g>
+                        </svg> -->
+                        <img src="assets/img/chaithra.jpg" alt="" class="about__img">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hello from Chaithra,</h1>
+                        <h3 class="home__subtitle">Data scientist and Machine Learning Engineer</h3>
+                        <p class="home__description">Advanced expertise in developing and managing high-quality machine
+                            learning algorithms and Data Analysis </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
 
-<!-- Home -->
-
-<section id="home">
-
-    <div class="container">
-    
-    <div class="home-content">
+                <div class="home_scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down homw__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
         
-    </div>
-    
-    </div>
-    
-    </section>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title"> About Me</h2>
+            <span class="section__subtitle">My introduction</span>
 
-    
-<!-- Portfolio -->
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
 
-<section id="portfolio">
+                <div class="about__data">
+                    <p class="about__description">
+                        Data scientist, with extensive experience in machine learning models
+                        and algorithm development, Eager to apply the skills in the Data World.
+                        Completed Master's in Computer Science with a concentration in Machine Learning.
+                    </p>
 
-    <div class="container">
-    <h2><span class="primary-color">My Portfolio</span></h2>
-    
-    <div class="projects">
-    
-    <div class="project">
-    
-    <div class="img-container">
-    
-    <img src="images/project1.png" alt="" class="project-image">
-    
-    </div>
-    
-    <div class="project-content">
-    
-    <h3>Sentiment Analysis</h3>
-    
-    <p>
-    Created a logistic regression model to analyze product reviews. 
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Years <br> experience </span>
+                        </div>
 
-    Used GridSearchCV for tuning hyperparameters. 
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Companies <br> worked </span>
+                        </div>
 
-    Achieved an accuracy of 90% while classifying a review as positive or negative.        
-    
-    </p>
-    
-    </div>
-    
-    </div>
-    
-    <div class="project">
-    
-    <div class="img-container">
-    
-    <img src="images/project2.png" alt="">
-    
-    </div>
-    
-    <div class="project-content">
-    
-    <h3>Smart irrigation and plant disease detection</h3>
-    
-    <p>
-    
-    Implemented an IoT system that automatically release water to the fields depending on factors like temperature, soil moisture, and humidity using Arduino and Think Cloud. 
+                        <div>
+                            <span class="about__info-title">10+</span>
+                            <span class="about__info-name">Completed <br> projects </span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/Chaithra-Resume.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    Created a website to display these values as well as a Plant Disease Detection system using a CNN-based real-time classifier with train and test accuracy of 99 per cent and 96 per cent respectively.
+        </section>
 
-    Published two research papers.        
-    
-    </p>
-    
-    </div>
-    
-    </div>
-    
-    <div class="project">
-    
-    <div class="img-container">
-    
-    <img src="images/project3.png" alt="" >
-    
-    </div>
-    
-    <div class="project-content">
-    
-    <h3>Smart Parking</h3>
-    
-    <p>
-    
-    Developed a working prototype for smart parking system that grants access only to authorized personnel. An LED
-    lights up according to the availability of a parking space.
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
 
-    Presented in the mini-project competition in the department and won third place.
-    
-    </p>
-    
-    </div>
-    
-    </div>
-    
-    </section>
+            <div class="skills__container container grid">
+                <div>
+                    <!--====================== SKILLS 1 =============================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-code-branch skills__icon"></i>
 
-<!-- About -->
+                            <div>
+                                <h1 class="skills__title">Programming Languages and Libraries</h1>
+                                <span class="skills__subtitle">Several years of experience</span>
+                            </div>
 
-<section id="about">
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
 
-    <div class="container ">
-    
-    <h2 ><span class="primary-color">About Me</span></h2>
-    
-    <div class="about-content">
-    
-    <div class="column">
-    
-    <h3>My Interests</h3>
-    
-    <p>
-    
-        I am Chaithra Bekal, I am pursuing a Master of Science in Computer Science with a Machine Learning specialization at George Mason University, where I am engaging with cutting-edge technologies such as Scikit-learn, TensorFlow, and PySpark. I am also a part of the Mapping Shadow Influence project as a Data Analyst Intern, where I applying my skills in Data science. I am enhancing my theoretical knowledge and practical skills through advanced coursework and projects, As an Online Instructor at iDTech, I shared my expertise in Python, Machine Learning, and Java, fostering a passion for AI in students while staying connected with real-world applications.
-    
-    </br>
-    
-    I am a seasoned software engineer and an aspiring machine learning and AI enthusiast. With a rich background in Python, C#, Java, and automation testing, I have successfully developed and implemented robust automation test frameworks for the HP Sales Central project at Intimetec, where I worked for over two years. I have also mentored junior team members, spearheaded performance testing initiatives, and acquired extensive automation testing training in the C# .NET framework.
-    
-    </br>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <div class="skills__number">95%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__python"></div>
+                                </div>
+                            </div>
 
-    My goal is to harness the power of data to create intelligent systems that make our lives easier, more efficient, and simply better. I am always eager to explore new horizons and opportunities to apply and expand my knowledge in the field. If you're working on groundbreaking AI, ML, or data engineering projects, I'd love to connect and discuss how I can contribute to your team's success. Let's shape a future powered by data and intelligence!
-    </p>
-    
-    <a href=#about class="btn">View CV</a>
-    
-    </div>
-    
-    <div class="column">
-    
-    <h3 class="margin">Languages I Know</h3>
-    
-    <div class="pro-languages">
-    
-    <div class="language secondary-color"><i class="fab fa-css3-alt fa-4x"></i>
-    
-    <div>
-    
-    <h4 class="primary-text">C</h4>
-    
-    </div>
-    
-    </div>
-    
-    <div class="language secondary-color"><i class="fab fa-html5 fa-4x"></i>
-    
-    <div>
-    
-    <h4 class="primary-text">C#</h4>
-    
-    </div>
-    
-    </div>
-    
-    <div class="language secondary-color"><i class="fab fa-js-square fa-4x"></i>
-    
-    <div>
-    
-    <h4 class="primary-text">Java</h4>
-    
-    </div>
-    
-    </div>
-    
-    <div class="language secondary-color"><i class="fab fa-python fa-4x"></i>
-    
-    <div>
-    
-    <h4 class="primary-text">Python</h4>
-    
-    </div>
-    
-    </div>
-    
-    <div class="language secondary-color"><i class="fab fa-java fa-4x"></i>
-    
-    <div>
-    
-    <h4 class="primary-text"> Typescript and Javascript</h4>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </section>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <div class="skills__number">40%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__java"></div>
+                                </div>
+                            </div>
 
-<!-- Contact -->
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PySpark</h3>
+                                    <div class="skills__number">60%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__r"></div>
+                                </div>
+                            </div>
 
-<section id="contact">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Pandas</h3>
+                                    <div class="skills__number">80%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__cplusplus"></div>
+                                </div>
+                            </div>
 
-    <div class="container">
-    
-    <h2 class=""><span class="primary-color">Contact Me</span></h2>
-    
-    <div class="contact-content">
-    
-    <div class="column ">
-    
-    <h3>Get in Touch</h3>
-    
-    <div class="contact-text">
-    
-    <p>My contact details are as follows, please leave your name, email and message if you have any questions for me.</p>
-    
-    <div class="icons">
-    
-    <div class="row">
-    
-    <i class="fas fa-user "></i>
-    
-    <div class="info">
-    
-    <h4>Name</h4>
-    
-    <div >Chaithra Bekal</div>
-    
-    </div>
-    
-    </div>
-    
-    <div class="row">
-    
-    <i class="fas fa-map-marker-alt"></i>
-    
-    <div class="info">
-    
-    <h4>Address</h4>
-    
-    <div>Fairfax, Virginia, USA</div>
-    
-    </div>
-    
-    </div>
-    
-    <div class="row">
-    
-    <i class="fas fa-envelope"></i>
-    
-    <div class="info">
-    
-    <h4>Email</h4>
-    
-    <div>chaithrabekal28@gmail.com</div>
-    <div>cbekal@gmu.edu</div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </div>
-    
-    </section>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PyTorch</h3>
+                                    <div class="skills__number">40%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__c"></div>
+                                </div>
+                            </div>
 
-<!-- Footer -->
+                        </div>
+                    </div>
+                </div>
 
-<footer>
+                <!--====================== SKILLS 2 =============================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-atom skills__icon"></i>
 
-    <span>Created By Chaithra Bekal | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+                        <div>
+                            <h1 class="skills__title">Technologies and Tools</h1>
+                            <span class="skills__subtitle">Several years of experience</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">AWS</h3>
+                                <div class="skills__number">70%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__docker"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Kubernetes</h3>
+                                <div class="skills__number">30%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__kubernetes"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git</h3>
+                                <div class="skills__number">90%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__git"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Selenium</h3>
+                                <div class="skills__number">90%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__reactnative"></div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bash</h3>
+                                <div class="skills__number">85%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__bash"></div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <div class="skills__number">80%</div>
+                            </div>
+                            <div class="skills__bar">
+                                <div class="skills__percentage skills__bootstrap"></div>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                    <!--====================== SKILLS 3 =============================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-book-open skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Machine Learning</h1>
+                                <span class="skills__subtitle">Several years of experience</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Data Cleaning</h3>
+                                    <div class="skills__number">90%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__mysql"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Machine Learning Algorithms</h3>
+                                    <div class="skills__number">85%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__postgresql"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Natural Language Processing</h3>
+                                    <div class="skills__number">80%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__mssqlserver"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Neural Networks</h3>
+                                    <div class="skills__number">70%</div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__mongo"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualifications">
+            <h2 class="section__title">Qualifications</h2>
+            <div class="section__subtitle">My personal journey</div>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">M.S. in Computer Science</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://catalog.gmu.edu/colleges-schools/engineering-computing/school-computing/computer-science/computer-science-ms/" target="_blank">George Mason University, VA, USA</a>
+                                        <br>
+                                        <h5>3.73/4.0 gpa</h5>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - 2024
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">B.S. in Computer Science</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://vtu.ac.in/computer-science-engineering/" target="_blank">Visvesvaraya Technological University, India</a>
+                                        <br>
+                                        <h5>8.47/10.0 gpa</h5>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2020
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Data Analyst Intern</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://schar.gmu.edu/" target="_blank">Schar School of Policy and Government at George Mason University</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Feb 2024 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Online Instructor in AI and ML</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.idtech.com/" target="_blank">iD Tech</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    May 2023 - Aug 2023
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 3 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Engineer</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://www.intimetec.com/" target="_blank">Intimetec</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jan 2020 - Jun 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Expertise ====================-->
+        <section class="expertise section" id="expertise">
+            <h2 class="section__title">Expertise</h2>
+            <span class="section__subtitle">Areas of Interest</span>
+
+            <div class="Expertise__container container grid">
+                <!--===================== Expertise 1 ====================-->
+                <div class="Expertise__content">
+                    <div>
+                        <i class="uil uil-chart-line Expertise__icon"></i>
+                        <h3 class="Expertise__title">Data Science</h3>
+                        <span class="button button--flex button--small button--link Expertise__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="Expertise__modal">
+                            <div class="Expertise__modal-content">
+                                <h3 class="Expertise__modal-title">Data Science</h3>
+                                <i class="uil uil-times Expertise__modal-close"></i>
+                                
+                                <ul class="Expertise__modal-expertise grid">
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I perform extensive data analysis and interpretation to understand patterns
+                                            and trends.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I manage and optimize data systems, and design algorithms for data mining and
+                                            research purposes.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I provide actionable insights based on data analysis.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===================== Expertise 2 ====================-->
+                <div class="Expertise__content">
+                    <div>
+                        <i class="uil uil-brain Expertise__icon"></i>
+                        <h3 class="Expertise__title">Machine Learning and Artificial Intelligence</h3>
+
+                        <span class="button button--flex button--small button--link Expertise__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="Expertise__modal">
+                            <div class="Expertise__modal-content">
+                                <h4 class="Expertise__modal-title">Machine Learning and Artificial Intelligence</h4>
+                                <i class="uil uil-times Expertise__modal-close"></i>
+
+                                <ul class="Expertise__modal-expertise grid">
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I develop and implement advanced ML models, including deep learning and
+                                            neural networks.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I specialize in creating predictive models for a variety of problems,
+                                            enhancing customer service and engagement.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I have expert knowledge in building ML models from scratch and by using built-in models from Scikit-Learn.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I also have in depth knowledge about the ML algorithms like Gradient Descent, Boosting and Trees.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===================== Expertise 3 ====================-->
+                <div class="Expertise__content">
+                    <div>
+                        <i class="uil uil-robot Expertise__icon"></i>
+                        <h3 class="Expertise__title">Automation Testing</h3>
+
+                        <span class="button button--flex button--small button--link Expertise__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="Expertise__modal">
+                            <div class="Expertise__modal-content">
+                                <h4 class="Expertise__modal-title">Automation Testing</h4>
+                                <i class="uil uil-times Expertise__modal-close"></i>
+
+                                <ul class="Expertise__modal-expertise grid">
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I develop efficient and robust Automation Framework, Improves testing time and maintains
+                                            applications.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I design and implement CI/CD pipelines for testing, using Jenkins.
+                                            Ensures faster and reliable testing before deployments.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===================== Expertise 4 ====================-->
+                <div class="Expertise__content">
+                    <div>
+                        <i class="uil uil-file-alt Expertise__icon"></i>
+                        <h3 class="Expertise__title">Natural Language Processing</h3>
+
+                        <span class="button button--flex button--small button--link Expertise__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="Expertise__modal">
+                            <div class="Expertise__modal-content">
+                                <h4 class="Expertise__modal-title">Natural Language Processing</h4>
+                                <i class="uil uil-times Expertise__modal-close"></i>
+
+                                <ul class="Expertise__modal-expertise grid">
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I have a strong foundation in NLP techniques, including text classification, sentiment analysis, and topic modeling.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I have a good knowledge in Large Language Models like BERT.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===================== Expertise 5 ====================-->
+                <div class="Expertise__content">
+                    <div>
+                        <i class="uil uil-cloud Expertise__icon"></i>
+                        <h3 class="Expertise__title">AWS and Cloud</h3>
+
+                        <span class="button button--flex button--small button--link Expertise__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="Expertise__modal">
+                            <div class="Expertise__modal-content">
+                                <h4 class="Expertise__modal-title">AWS and Cloud</h4>
+                                <i class="uil uil-times Expertise__modal-close"></i>
+
+                                <ul class="Expertise__modal-expertise grid">
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p> I have a great understanding in AWS deployments and Services.</p>
+                                    </li>
+
+                                    <li class="Expertise__modal-service">
+                                        <i class="uil uil-check-circle Expertise__modal-icon"></i>
+                                        <p>I can deploy applications in S3 buckets and create EC2 instances. Integrating Kubernetes and hosting the docker image in the EC2 instance.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!--======================== PORTFOLIO 1 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/nlp.png" alt="" class="portfolio__img" loading="lazy">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sentiment Analysis</h3>
+                            <p class="portfolio__description">
+                                Attained a 90% accuracy in sentiment analysis for baby product reviews using Logistic Regression with Python, Pandas, NumPy, NLTK, and Scikit-Learn.
+                            </p>
+                            <a href="https://github.com/Chaithra28/DataScienceProjects/tree/main/SentimentAnalysis"
+                                class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 2 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/eda.png" alt="" class="portfolio__img" loading="lazy">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Fake Covid Fact-Checked News</h3>
+                            <p class="portfolio__description">
+                                Exploratory Data Analysis and Classification of Fake Covid Fact-Checked News using Python, Pandas, NumPy, NLTK, and Scikit-Learn.
+                                Used Logistic Regression, Random Forest, and Gradient Boosting.
+                            </p>
+                            <a href="https://github.com/Chaithra28/fake-covid-news" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 3 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/pyspark.png" alt="Featurewiz Logo" class="portfolio__img" loading="lazy">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Fake Job Postings Detection</h3>
+                            <p class="portfolio__description">
+                                Applied advanced machine learning models using Spark, including Logistic Regression, Linear SVC, 
+                                Random Forest Classifier, and Multilayer Perceptron Classifier, 
+                                resulting in a notable 87% accuracy with the Multilayer Perceptron in effectively identifying fake job postings.
+                            </p>
+                            <a href="https://github.com/Chaithra28/Pyspark-Projects/tree/main/FakeJobPostingsDetection" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 4 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/econ.jpeg" alt="" class="portfolio__img" loading="lazy">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">EconBERTa</h3>
+                            <p class="portfolio__description">
+                                An attempt to reproduce and analyze the results of the paper 
+                                <a href="https://aclanthology.org/2023.findings-emnlp.774.pdf">EconBERTa: Towards Robust Extraction of Named Entities in Economics</a>
+                            </p>
+                            <a href="https://github.com/Chaithra28/EconBERTa-rep" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 5 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/rottentomatoes.jpeg" alt="" class="portfolio__img" loading="lazy">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Rotten Tomatoes Rating Classification</h3>
+                            <p class="portfolio__description">
+                                Classifications of Rotten Tomatoes movie reviews using Python, Pandas, NumPy, NLTK, and Scikit-Learn.
+                            </p>
+                            <a href="https://github.com/Chaithra28/RottenTomatoesClassification" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <!--============ Add Pagination =============-->
+                <div class="swiper-pagination swiper-pagination-portfolio"></div>
+            </div>
+        </section>
+
+        <!--==================== ARTICLES ====================-->
+        <!-- <section class="articles section" id="articles">
+                <h2 class="section__title">Medium Articles</h2>
+                <span class="section__subtitle">See some of my published articles</span>
+                <div class="articles__container container swiper-container">
+                    <div class="swiper-wrapper"> -->
+                    <!--==================== ARTICLE 1 ====================-->
+                    <!-- <div class="articles__content swiper-slide">
+                        <div class="card">
+                        <a href="https://medium.com/gitconnected/a-developers-guide-to-working-with-apis-d5c8aa4e0284">
+                            <h4>🛠️ A Developer's Guide to Working with APIs</h4>
+                            <p class="journal">Published on Level Up Coding</p>
+                            <p>Master using APIs in Python! Learn why APIs are crucial, how to use them, and the
+                                differences between REST and GraphQL.</p>
+                        </a>
+                        </div>
+                    </div> -->
+                <!--==================== ARTICLE 2 ====================-->
+                <!-- <div class="articles__content swiper-slide">
+                    <div class="card">
+                        <a href="https://medium.com/python-in-plain-english/python-the-glittering-jewel-of-modern-technology-972976c130f4">
+                            <h4>🐍 Python: The Glittering Jewel of Modern Technology</h4>
+                            <p class="journal">Published on Python in Plain English</p>
+                            <p>Uncover the transformative role of Python, the versatile jewel of modern technology, driving innovation across AI, ML and web development.</p>
+                        </a>
+                    </div>
+                </div> -->
+                <!--==================== ARTICLE 3 ====================-->
+                <!-- <div class="articles__content swiper-slide">
+                    <div class="card">
+                        <a href="https://medium.com/gitconnected/secrets-to-a-killer-data-science-portfolio-projects-that-will-skyrocket-your-career-67089b924929">
+                            <h4>🚀 Secrets to a Killer Data Science Portfolio: Projects that Will Skyrocket Your Career
+                            </h4>
+                            <p class="journal">Published on Level Up Coding</p>
+                            <p>Unlock the secrets to a powerful data science portfolio that propels your career to new
+                                heights.</p>
+                        </a>
+                    </div>
+                </div> -->
+                <!--==================== ARTICLE 4 ====================-->
+                <!-- <div class="articles__content swiper-slide">
+                    <div class="card">
+                        <a href="https://medium.com/gitconnected/building-a-deep-learning-model-with-tensorflow-and-keras-easier-than-you-think-62d0cb7945ff">
+                            <h4>🧠 Building a Deep Learning Model with TensorFlow and Keras: Easier Than You Think</h4>
+                            <p class="journal">Published on Level Up Coding</p>
+                            <p>Master the art of Deep Learning with TensorFlow and Keras. A step-by-step guide to your
+                                first model.</p>
+                        </a>
+                    </div>
+                </div> -->
+                <!--==================== ARTICLE 5 ====================-->
+                <!-- <div class="articles__content swiper-slide">
+                    <div class="card">
+                        <a href="https://medium.com/mlearning-ai/creating-a-chatbot-with-python-5598e9a5f993">
+                            <h4>💬 Creating a Chatbot with Python</h4>
+                            <p class="journal">Published on MLearning.ai</p>
+                            <p>Learn how to create a simple chatbot using Python and NLP techniques. Create an
+                                intelligent conversational agent.</p>
+                        </a>
+                    </div>
+                </div> -->
+                <!--==================== ARTICLE 6 ====================-->
+                <!-- <div class="articles__content swiper-slide">
+                    <div class="card">
+                        <a href="https://medium.com/gitconnected/design-patterns-in-python-a-practical-guide-to-writing-maintainable-code-a3f780a4a6ad">
+                            <h4>📝 Design Patterns in Python: A Practical Guide to Writing Maintainable Code</h4>
+                            <p class="journal">Published on Level Up Coding</p>
+                            <p>Discover essential design patterns in Python for writing maintainable code, for beginner and experienced Python developer.</p>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-articles"></div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">> Want to know me better?
+                            <br>
+                            > Want to Collaborate with me?</h2>
+                        <p class="project__description">Contact me now!</p>
+                        <div class="centered-container">
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project__icon button__icon button__contact"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">chaithrabekal22@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Fairfax, VA, USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <h2 class="footer__title">Chaithra Bekal</h2>
+                    <span class="footer__subtitle">Machine Learning Engineer, Data Scientist, Software Engineer</span>
+                </div>
+
+                <ul class="footer__links" style="align-self: center;">
+                    <li>
+                        <a href="#expertise" class="footer__link">Expertise</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials" style="align-self: center;">
+                    <!-- <a href="" class="footer__social" target="_blank">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+
+                    <a href="" target="_blank"
+                        class="footer__social">
+                        <i class="uil uil-medium-m"></i>
+                    </a> -->
+
+                    <a href="https://www.linkedin.com/in/chaithra-bekal/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy" style="margin-top: 10px;">&#169; Chaithra Bekal. All rights reserved.</p>
+        </div>
     </footer>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
 </body>
 
 </html>
